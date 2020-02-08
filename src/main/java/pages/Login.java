@@ -15,9 +15,10 @@ public class Login extends ProjectSpecificMethods {
 			driver.findElementById("password").sendKeys("leaf@12");
 			return this;
 		}
-		public Dashboardpage ClickLogin()
+		public Dashboardpage ClickLogin() throws InterruptedException
 		{
 			driver.findElementById("buttonLogin").click();
+			Thread.sleep(3000);
 			return new Dashboardpage();
 		}
 		
