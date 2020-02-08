@@ -17,7 +17,7 @@ public class Login extends ProjectSpecificMethods {
 		}
 		public Dashboardpage ClickLogin()
 		{
-			driver.findElementByClassName("buttonLogin").click();
+			driver.findElementById("buttonLogin").click();
 			return new Dashboardpage();
 		}
 		
